@@ -1,0 +1,13 @@
+{
+  "name": "flapp",
+  "version": "0.0.1",
+  "description": "Flat app. Webapp for handling stuff which need to be handled in a flat.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3"
+  }
+}
