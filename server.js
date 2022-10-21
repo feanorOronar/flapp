@@ -1,15 +1,8 @@
-import * as http from 'http';
+import express from 'express';
 
-const HOSTNAME = '0.0.0.0';
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
+const app = express();
+app.use(express.static('public'));
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.write('Server is up and running.');
-  res.end();
-});
-
-server.listen(PORT, HOSTNAME, () => {
-  console.log(`Server running at http://${HOSTNAME}:${PORT}/`);
-});
+app.listen(PORT);
+console.log(`Server running at http://localhost:${PORT}`);

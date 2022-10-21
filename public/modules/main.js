@@ -1,4 +1,4 @@
-import * as ListItems from './modules/list.js';
+import * as ListItems from './list.js';
 
 const items = document.querySelector('#items');
 const addButton = document.querySelector('#add');
